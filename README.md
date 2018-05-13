@@ -24,7 +24,7 @@ What things you need to install the software and how to install them
 </ul>
 
 ```
-I have used PHP Laravel Framework for backend SAM and Vue.js for frontend. PASSPORT for token based validation for Micro services.
+I have used PHP Laravel Framework for backend MSA and Vue.js for frontend. PASSPORT for token based validation for Micro services.
 ```
 
 ### Installing
