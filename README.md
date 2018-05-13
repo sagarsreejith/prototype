@@ -55,11 +55,31 @@ php artisan serve.
 ### Micro Service end points
 
 ```
-###login API
+Login API
+
     URL: /api/login
     Method: POST
     Request Payload: {
         "email": "your_login email. You can find that in mysql db",
         "password": "policy"
     }
+
+Insert Mail API
+
+    URL: /api/insert-mail
+    Method: POST
+    Request Header: Autherization : Barear (Which you will get on success of login)
+    Request Payload: {
+        "subject": "subject",
+        "body": "message",
+        "sennd-to":"2,34,33,21",
+        "sender":"39",
+        "status": "draft/send"
+    }
+```
+
+# Scaling the application
+
+```
+If you guys want to scale the application seperate the Micro services and fronent and a WorkFlow manager to handlide various flows.
 ```

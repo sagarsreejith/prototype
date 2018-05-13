@@ -17,6 +17,7 @@ class CreateMailBoxTable extends Migration
             $table->increments('id');
             $table->string('subject');
             $table->string('body');
+            $table->string('status');
             $table->string('send_to');
             $table->integer('sender_id')->unsigned();
             $table->foreign('sender_id')->references('id')->on('users');
