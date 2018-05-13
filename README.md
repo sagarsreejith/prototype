@@ -1,14 +1,25 @@
-# Project Title
+# Prototype
 
-One Paragraph of project description goes here
+Create Application Like Gmail
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Tecnologies which I used to develope this application PHP and JS.
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
+
+<ul>
+    <li>PHP &gt;= 7.1.3</li>
+    <li>OpenSSL PHP Extension</li>
+    <li>PDO PHP Extension</li>
+    <li>Mbstring PHP Extension</li>
+    <li>Tokenizer PHP Extension</li>
+    <li>XML PHP Extension</li>
+    <li>Ctype PHP Extension</li>
+    <li>JSON PHP Extension</li>
+</ul>
 
 ```
 Give examples
