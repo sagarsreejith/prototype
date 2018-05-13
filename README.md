@@ -19,80 +19,47 @@ What things you need to install the software and how to install them
     <li>XML PHP Extension</li>
     <li>Ctype PHP Extension</li>
     <li>JSON PHP Extension</li>
+    <li>MySql</li>
+    <li>Composer</li>
 </ul>
 
 ```
-Give examples
+I have used PHP Laravel Framework for backend SAM and Vue.js for frontend. PASSPORT for token based validation for Micro services.
 ```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+You can use artisan command for database migration, database seed and starting the project.
 
-Say what the step will be
+````
+Please change the db credentials in .env file.
+````
 
-```
-Give the example
-```
-
-And repeat
+For database migration run the code below.
 
 ```
-until finished
+php artisan migrate
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+For datbase seed please run the code below.
 
 ```
-Give an example
+php artisan db:seed
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+Finally you can start the application. Please run the code below.
 
 ```
-Give an example
+php artisan serve.
 ```
+### Micro Service end points
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+```
+###login API
+    URL: /api/login
+    Method: POST
+    Request Payload: {
+        "email": "your_login email. You can find that in mysql db",
+        "password": "policy"
+    }
+```
