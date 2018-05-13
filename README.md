@@ -72,14 +72,32 @@ Insert Mail API
     Request Payload: {
         "subject": "subject",
         "body": "message",
-        "sennd-to":"2,34,33,21",
+        "senndTo":"2,34,33,21",
         "sender":"39",
-        "status": "draft/send"
+        "status": "draft/send",
+    }
+
+Fetch Mails
+
+    URL: /api/fetch-mail
+    Method: POST
+    Request Header: Autherization : Barear (Which you will get on success of login)
+    Request Payload: {
+        "userId": "user_id"
+    }
+
+Update the Mail status
+
+    URL: /api/update-mail
+    Method: POST
+    Request Header: Autherization : Barear (Which you will get on success of login)
+    Request Payload: {
+        "mailId": "user_id"
     }
 ```
 
 # Scaling the application
 
 ```
-If you guys want to scale the application seperate the Micro services and fronent and a WorkFlow manager to handlide various flows.
+If you guys want to scale the application, seperate the Micro services and fronent and add a WorkFlow manager to handlide various flows.
 ```
