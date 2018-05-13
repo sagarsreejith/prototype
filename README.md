@@ -99,5 +99,5 @@ Update the Mail status
 # Scaling the application
 
 ```
-If you guys want to scale the application, seperate the Micro services and fronend and add a WorkFlow manager to handlide various flows.
+If you guys want to scale the application, seperate the Micro services and fronend and add a WorkFlow manager to handle various flows.
 ```
